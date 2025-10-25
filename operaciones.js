@@ -1,13 +1,13 @@
 import fs from 'node:fs'
 
 // Registrar cita
-export const registrar = (nombre, edad, animal, color, enfermedad) => {
+export const registrar = (nombre, edad, tipoAnima, color, enfermedad) => {
     const citas = JSON.parse(fs.readFileSync('./citas.json', 'utf-8')) 
 
     const nuevaCita = {
         nombre,
         edad,
-        animal,
+        tipoAnimal,
         color,
         enfermedad
     }
